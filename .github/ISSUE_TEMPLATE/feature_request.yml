@@ -1,0 +1,42 @@
+name: 💡 Feature request
+description: Suggest an idea or improvement for the Curry Leaves desktop shell.
+title: "[Feature]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion! This repo is the **thin Electron desktop shell** — it owns
+        native seams (spawning the backend, the window, notifications, the ⌘R hotkey).
+        Product features in the UI or backend belong in the
+        [web UI](https://github.com/Curry-Leaves/curry-leaves-assistant-web/issues) or
+        [backend](https://github.com/Curry-Leaves/curry-leaves-assistant/issues) repo.
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This request is about the desktop shell, not the web UI or backend.
+          required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem does this solve?
+      description: Describe the motivation or the pain point.
+      placeholder: I'm frustrated when ...
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: What would you like to happen?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Any alternative solutions or workarounds you've thought about.

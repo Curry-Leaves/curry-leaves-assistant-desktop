@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 📖 Documentation
+    url: https://ilayanambi.com/curryleaves
+    about: Read the Curry Leaves docs before filing an issue.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/Curry-Leaves/curry-leaves-assistant-desktop/security/advisories/new
+    about: Please report security issues privately, not as public issues. See SECURITY.md.
+  - name: 🐍 Backend (Python / FastAPI) issues
+    url: https://github.com/Curry-Leaves/curry-leaves-assistant/issues
+    about: File issues about the backend or agent pool in the backend repo.
+  - name: ⚛️ Web UI issues
+    url: https://github.com/Curry-Leaves/curry-leaves-assistant-web/issues
+    about: File issues about the React UI in the web repo.

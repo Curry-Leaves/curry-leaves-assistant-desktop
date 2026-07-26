@@ -1,0 +1,72 @@
+name: 🐛 Bug report
+description: Report something broken in the Curry Leaves desktop shell.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to file a bug! This repo is the **Electron desktop shell**.
+        If the problem is really in the UI or the backend, please file it in the
+        [web UI](https://github.com/Curry-Leaves/curry-leaves-assistant-web/issues) or
+        [backend](https://github.com/Curry-Leaves/curry-leaves-assistant/issues) repo instead.
+
+        **Do not report security vulnerabilities here** — see [SECURITY.md](../blob/main/SECURITY.md).
+  - type: checkboxes
+    id: preflight
+    attributes:
+      label: Preflight checklist
+      options:
+        - label: I searched existing issues and this isn't a duplicate.
+          required: true
+        - label: This is a bug in the desktop shell, not the web UI or backend.
+          required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: A clear description of the bug and what you expected instead.
+      placeholder: When I ..., the app ... but I expected ...
+    validations:
+      required: true
+  - type: textarea
+    id: repro
+    attributes:
+      label: Steps to reproduce
+      description: How can we reproduce it?
+      placeholder: |
+        1. Run `./start.sh`
+        2. ...
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs / output
+      description: Relevant terminal output or errors. Include the backend readiness line if related.
+      render: shell
+  - type: input
+    id: version
+    attributes:
+      label: App version / commit
+      placeholder: "1.0.0 or commit sha"
+    validations:
+      required: true
+  - type: dropdown
+    id: os
+    attributes:
+      label: Operating system
+      options:
+        - macOS
+        - Windows
+        - Linux
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: env
+    attributes:
+      label: Environment details
+      description: Node version, Electron version, and any CURRY_LEAVES_* env vars you set.
+      placeholder: "Node 20.x, Electron 37, CURRY_LEAVES_PORT=5177"

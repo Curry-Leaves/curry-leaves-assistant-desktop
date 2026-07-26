@@ -1,0 +1,40 @@
+{
+  "name": "curry-leaves-assistant-desktop",
+  "productName": "Curry Leaves",
+  "version": "1.0.0",
+  "description": "Curry Leaves desktop — thin Electron shell that spawns the Curry Leaves backend and hosts the shared web UI.",
+  "main": ".vite/build/main.js",
+  "private": true,
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "dev": "./start.sh"
+  },
+  "author": {
+    "name": "Ilayanambi Ponramu",
+    "email": "curry_leaves_ai@yahoo.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Curry-Leaves/curry-leaves-assistant-desktop"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.11.1",
+    "@electron-forge/maker-deb": "^7.11.2",
+    "@electron-forge/maker-rpm": "^7.11.2",
+    "@electron-forge/maker-squirrel": "^7.11.2",
+    "@electron-forge/maker-zip": "^7.11.1",
+    "@electron-forge/plugin-fuses": "^7.11.1",
+    "@electron-forge/plugin-vite": "^7.11.1",
+    "@electron/fuses": "^1.8.0",
+    "electron": "^37.4.0",
+    "typescript": "^5.8.3",
+    "vite": "^5.4.21"
+  },
+  "dependencies": {
+    "curry-leaves-assistant-web": "^1.0.3",
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}
